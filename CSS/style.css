@@ -56,6 +56,7 @@ h2{
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 32px 0;
 }
 
 #header a:hover{
@@ -495,6 +496,7 @@ h2{
 }
 
 .texto-top{
+    margin-top: 12px;
     color: var(--e-global-color-e361c0d);
 }
 .texto-top .col-30{
@@ -541,6 +543,7 @@ h2{
     padding: 0;
 }
 .texto-top2{
+    margin-top: 12px;
     color: var(--e-global-color-e361c0d);
 }
 .texto-top2 .col-30{
