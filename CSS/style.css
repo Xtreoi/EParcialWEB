@@ -13,10 +13,15 @@
     --e-global-color-06e4b24: #E77729;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Space Grotesk', sans-serif;
     font-size: 14px;   
     margin: 0;
+    position: relative;
 }
 
 h1 h2 h3 h4 h5 h6{
@@ -44,14 +49,19 @@ h2{
 }
 #header{
     background-color: transparent;
-    background-image: radial-gradient(circle, rgb(59, 109, 238) -15%, rgb(27, 27, 27) 72%);
+    background-image: radial-gradient(circle, #3B6DEE -15%, #222327 72%);
     color: #FFFFFF;
-    padding: 15px 0px 15px 0px;
     margin: 0;
     width: 100%;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+#header a:hover{
+    transition: all .5s ease-in-out;
+    color: var(--e-global-color-primary);
+}
 #img-menu{
     float: left;
     padding: 0;
@@ -70,6 +80,7 @@ h2{
     padding: 350px 0;
     background-size: cover;
     position: relative;
+    z-index: 3;
 }
 
 
@@ -80,7 +91,8 @@ h2{
 }
 
 #panel .texto-columna{
-    padding-left:32px ;
+    padding-right: calc(100% - 95%);
+    padding-left: 10%;
     position: absolute;
     background-color: rgba(0,0,0,0.7);
     height: 100%;
@@ -92,22 +104,27 @@ h2{
 }
 #logos{
     padding: 0;
+    background-color: var(--e-global-color-4cc6d85);
 }
 
 #logos img{
-    border: solid var(--e-global-color-accent) 3px;
+    border: solid var(--e-global-color-4cc6d85) 3px;
     opacity: 0.9;
 }
 
 #logos .col-16_66{
-    padding: 0;
+    padding: 1px;
+}
+
+#logos .row{
+    margin: 0;
 }
 
 #guia{
-    background-image: url(../images/fondo\ guia.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/fondo\ guia.jpg);
     background-size: cover;
     color: #FFFFFF;
-    padding: 110px 10px 90px 10px;
+    padding: 140px 0;
 }
 
 #guia h2{
@@ -131,8 +148,8 @@ h2{
 
 #top-semana{
     background-color: transparent;
-    background-image: radial-gradient(circle at top left, #3B6DEE -15%, #1B1B1B 28%);
-    padding: 120px 50px 100px 50px;
+    background-image: radial-gradient(circle at top left, #3B6DEE -15%, #222327 28%);
+    padding: 130px 0;
 }
 
 #top-semana img{
@@ -144,17 +161,60 @@ h2{
     text-transform: uppercase;
 }
 
+#top-semana .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #mejores-descuentos{
-    background-color: var(--e-global-color-accent);
+    padding: 130px 0;
+    background-color: var(--e-global-color-4cc6d85);
+}
+
+#NuevoSaber{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/starfield.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-position: top center;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#footer{
+    color: var(--e-global-color-e361c0d);
+    background-color: var(--e-global-color-4cc6d85);
+    padding: 30px 0;
+}
+
+#mensajes-footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+#ir-arriba{
+    padding: 8px 25px;
+    font-size: 20px;
+    background-color: var(--e-global-color-e361c0d);
+    color: var(--e-global-color-text);
+    font-weight: 900;
+    position: fixed;
+    top: calc(100% - 50%);
+    right: calc(100% - 103%);
+    rotate: 270deg;
+    transition: all .3s ease-in-out;
 }
 .texto-superior-guia p{
     font-size: 20px;
     font-weight: 600;
 }
-.padded{
-    padding: 0 30px;
-}
 
+.padded{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .row{
     display: flex; 
     margin-left: -15px;
@@ -182,8 +242,8 @@ h2{
     max-width: 15%;
 }
 .col-16_66{
-    flex-basis: 16.66%;
-    max-width: 16.66%;
+    flex-basis: 16.6%;
+    max-width: 16.6%;
 }
 
 .col-20{
@@ -252,15 +312,37 @@ h2{
     color: var(--e-global-color-e361c0d);
 }
 
+.boton-transparente{
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 35px;
+    padding: 19px 25px;
+    background-color: rgba(155, 155, 155, 0.5);
+    width: fit-content;
+    transition: all .5s ease-in-out;
+}
+
+.boton-transparente i{
+    color: var(--e-global-color-e361c0d);
+}
+
+#NuevoSaber .boton-transparente:hover{
+    background-color: rgba(254, 229, 0, 0.5);
+    
+}
 
 .boton-amarillo{
     font-weight: 500;
     font-size: 16px;
     border-radius: 35px;
-    padding: 18px 25px;
-    background-image: linear-gradient(110deg, 
-    var(--e-global-color-primary)60%, var(--e-global-color-06e4b24)85%,var(--e-global-color-4cc6d85) 100%);
+    padding: 19px 25px;
+    background-image: linear-gradient(125deg,var(--e-global-color-primary) 18%, var(--e-global-color-607e692) 80%);
     width: fit-content;
+    transition: all 2.5s ease-in-out;
+}
+
+.boton-amarillo:hover{
+    background-image: linear-gradient(290deg,var(--e-global-color-607e692) 25%, var(--e-global-color-primary) 170%);
 }
 
 .boton-amarillo a{
@@ -268,7 +350,7 @@ h2{
 }
 
 .boton-blanco{
-    padding: 18px 25px;
+    padding: 19px 25px;
     font-weight: 500;
     font-size: 16px;
     border-radius: 35px;
@@ -283,10 +365,19 @@ h2{
     border-radius: 35px;
     width: fit-content;
     background-color: var(--e-global-color-text);
+    transition: all .4s ease-in-out;
+}
+
+.boton-azul:hover,
+.boton-azul a:hover,
+.boton-azul i:hover{
+    background-color: var(--e-global-color-607e692);
+    color: var(--e-global-color-text);
 }
 
 .boton-azul a, .boton-azul i{
     color: var(--e-global-color-e361c0d);
+    transition: all .4s ease-in-out;
 }
 
 .posicion-boton-blanco{
@@ -327,7 +418,7 @@ h2{
     display: flex;
     justify-content: flex-start;
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 350;
 }
 
@@ -348,6 +439,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    transition: all .4s ease-in-out;
 }
 
 .texto-lateral{
@@ -412,6 +504,7 @@ h2{
     position: relative;
 }
 
+
 .texto-top p{
     font-size: 16px;
     font-weight: 700;
@@ -420,11 +513,11 @@ h2{
     position: absolute;
     content: "";
     width: 3px;
-    height: 48%;
+    height: 80%;
     background-image: linear-gradient(360deg, 
     var(--e-global-color-primary)75%, var(--e-global-color-e361c0d) 95%);
     left: -10px;
-    top: 28px;
+    top: 1.5px;
 }
 
 .texto-top .col-45{
@@ -506,6 +599,13 @@ h2{
     justify-content: flex-start;
 }
 
+.titulo-juego:hover{
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(125deg,var(--e-global-color-primary) 15%, var(--e-global-color-607e692) 50%)
+}
+
 .reseña-juego{
     font-weight: 400;
     word-spacing: 3px;
@@ -541,6 +641,12 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    transition: all .4s ease-in-out;
+}
+
+.col-15:hover{
+    background-image: linear-gradient(110deg,var(--e-global-color-primary) -10%, var(--e-global-color-607e692) 45%);
+    color: var(--e-global-color-text);
 }
 
 .juegos-descuento{
@@ -576,4 +682,19 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    transition: all .4s ease-in-out;
+}
+
+.hypertext{
+    margin: 30px 0;
+    font-weight: 900;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: var(--e-global-color-e361c0d);
+    text-shadow: 0px 0px 18px rgba(0,0,0,0.8);
+}
+
+.comentario{
+    color: var(--e-global-color-e361c0d);
+    font-size: 20px;
 }
