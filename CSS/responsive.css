@@ -1,0 +1,283 @@
+@media(max-width:1420px){
+    #header{
+        position: static;
+    }
+    #header .centrado-menu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
+
+    #header .col .img-fluid{
+        max-width: 45%;
+    }
+    #header .col-65{
+        display: none;
+    }
+    #header .boton-amarillo{
+        font-size: 25px;
+        padding: 20px 25px;
+    }
+
+    #panel{
+        background-position: center;
+    }
+    #panel .texto-resaltado{
+        font-size: 25px;
+    }
+    #panel h1{
+        font-size: 40px;
+    }
+
+    #panel .comentarios p{
+        font-size: 18.5px;
+    }
+
+    #panel .boton-amarillo style{
+        margin-left: 0;
+    }
+
+    #panel .boton-amarillo{
+        padding: 15.5px 21.5px;
+    }
+
+    #guia .boton-amarillo style,
+    #guia .boton-blanco style{
+        margin: 0 10px;
+    }
+
+
+    #mejores-descuentos h2 {
+        font-size: 35px;
+    }
+
+    #top-semana .texto-top h2 {
+        font-size: 35px;
+    }
+
+    #top-semana .row{
+        margin: 0;
+    }
+
+    #top-semana .col-45{
+        align-content: flex-start;
+        flex-basis: 42%;
+        max-width: 42%;
+    }
+
+    #top-semana .col-25{
+        flex-basis: 22%;
+        max-width: 22%;
+        justify-content: flex-end;
+    }
+
+    #top-semana .col-30{
+        flex-basis: 35%;
+        max-width: 35%;
+    }
+
+    #top-semana .texto-top .col-30 p{
+        font-size: 16px;
+    }
+
+    #top-semana .reseña-juego p{
+        font-size: 14.8px;
+    }
+
+    #mejores-descuentos .texto-top2 .col-30{
+        align-content: flex-start;
+    }
+    
+    .juegos-descuento, .juegos-descuento2{
+        margin: 40px 0;
+    }
+
+    #mejores-descuentos .img-fluid {
+        max-width: 95%;
+    }
+
+
+    .nombre-juego-descuento{
+        font-size: 32px;
+    }
+
+    .juegos-descuento .col-15 {
+        padding: 12px;
+    }
+
+    #ir-arriba{
+        right: calc(100% - 105.1%);
+    }
+
+    .boton-top-semana{
+        justify-content: flex-end;
+        padding-right: 18px;
+    }
+
+    #suscripcion .col-65{
+        padding-left: 80px;
+        flex-basis: 58%;
+        max-width: 58%;
+    }
+
+    #suscripcion .col{
+        justify-content: flex-start;
+    }
+
+    /****** Contacto ********/
+    
+    #header2{
+        position: static;
+    }
+    #header2 .centrado-menu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
+
+    #header2 .col .img-fluid{
+        max-width: 45%;
+    }
+    #header2 .col-65{
+        display: none;
+    }
+    #header2 .boton-amarillo{
+        font-size: 25px;
+        padding: 20px 25px;
+    }
+
+}
+
+@media(max-width:1090px){
+    #panel{
+        background-position: left;
+    }
+    #panel .texto-resaltado{
+        font-size: 24px;
+    }
+    #panel h1{
+        font-size: 40px;
+    }
+
+    #panel .comentarios p{
+        font-size: 17px;
+    }
+
+    #panel .boton-amarillo style{
+        margin-left: 15px;
+    }
+
+    #panel .boton-amarillo{
+        font-size: 18px;
+        padding: 15.5px 24.5px;
+    }
+
+    #panel .boton-blanco{
+        padding: 16px 20px;
+    }
+
+    #panel .col-35{
+        flex-basis: 42%;
+        max-width: 42%;
+    }
+
+    #panel .texto-columna{
+        padding-left: 8%;
+    }
+
+    #mejores-descuentos .col-30{
+        padding-left: 45px;
+        flex-basis: 35%;
+        max-width: 35%;
+    }
+
+    .texto-top2 .col-45{
+        font-size: 16px;
+    }
+
+    .col-45 {
+        flex-basis: 40%;
+        max-width: 40%;
+    }
+
+    .texto-top2 .col-45 p::after{
+        height: 65%;
+        top: 16px;
+    }
+
+    .juegos-descuento .row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .juegos-descuento figure, .juegos-descuento2 figure{
+        margin: 70px 0px 35px;
+        padding-left: 0px;
+        flex-basis: 0;
+        max-width: 60%;
+    }
+
+    .juegos-descuento .col-15, .juegos-descuento2 .col-15{
+        padding: 30px 20px;
+        flex-basis: 0;
+        max-width: 70%;
+        margin: 0;
+    }
+
+    .titulo-descuento, .titulo-descuento2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .nombre-juego-descuento, .nombre-juego-descuento2{
+        font-size: 45px;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+
+    #mejores-descuentos .img-fluid {
+        max-width: 100%
+    }
+
+    #mejores-descuentos .col-35{
+        padding-right: 0;
+    }
+
+    .juegos-descuento2 .row{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .juegos-descuento .col figure,.juegos-descuento2 .col figure{
+        padding: 0;
+    }
+
+    #ir-arriba{
+        right: calc(100% - 108.1%);
+    }
+
+    /***** Contacto ******/
+    
+    #infoDatos .row{
+        flex-direction: column;
+    }
+
+    #mensajeContacto .row{
+        flex-direction: row;
+    }
+
+    #mensajeContacto{
+        margin-top: 35px;
+    }
+
+    #datos{
+        margin-right: 0;
+    }
+
+    .col-61{
+        flex-basis: 0;
+        max-width: 100%;
+    }
+}

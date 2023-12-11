@@ -7,17 +7,18 @@
     <title>Steam Games</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="images/iconoFav.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 <body>
-<div id="header">
+<header id="header">
     <div class="container padded">
         <div class="row">
-            <div class="col">
-                <div class="img-menu">
+            <div class="col" style="display: flex; align-items: center;">
+                <figure class="img-menu">
                     <img src="images/Steam_gray-brown_logo.svg.png" class="img-fluid" alt="">
-                </div>
+                </figure>
             </div>
-            <div class="col col-65 centrado-menu">
+            <nav class="col col-65 centrado-menu">
                     <div class="col-16_66">
                         <p><a class="texto-color-amarillo"href="#panel">HOME</a></p>
                     </div>
@@ -34,22 +35,23 @@
                         <p><a class="texto-color-blanco" href="#">ABOUT US</a></p>
                     </div>
                     <div class="col-16_66">
-                        <p><a class="texto-color-blanco" href="#">SUPPORT</a></p>
+                        <p><a class="texto-color-blanco" href="./contacto.html">SUPPORT</a></p>
                     </div>
-            </div>
+            </nav>
             <div class="col centrado-menu">
-                <div class="boton-amarillo">
-                    <p style="color: #242A3C;">Chat online <i class="fa-solid fa-arrow-right"></i></p>
-                </div>
+                <button class="boton-amarillo">
+                    <p style="color: #242A3C;"><a href="contacto.html">Chat online <i class="fa-solid fa-arrow-right"></i></a></p>
+                </button>
             </div>
         </div><!-- row -->
     </div><!-- container -->
-</div><!-- header -->
+</header><!-- header -->
 
-<div id="panel">
+<main>
+<section id="panel">
         <div class="row">
             <div class="col-50">
-                <div class="container texto-columna">
+                <article class="container texto-columna">
                     <p class="texto-resaltado">Nuevos lanzamientos</p>
                     <h1>PRÓXIMOS LANZAMIENTOS <br>EN 2022 Y 2023</h1>
                     <div class="comentarios">
@@ -58,81 +60,81 @@
                         <p><i class="fa-solid fa-circle"></i> STARFIELD</p>  
                     </div><!-- comentarios -->
                     <div class="row botones-panel">
-                        <div class="col col-40">
-                            <div class="boton-amarillo" style="margin-left: 50px;">
+                        <div class="col col-35">
+                            <button class="boton-amarillo">
                                 <p><a href="#">Lista de juegos <i class="fa-solid fa-arrow-right"></i></a></p>
-                            </div>
+                            </button>
                         </div>
-                            <div class="boton-blanco posicion-boton-blanco" style="height: 1.5em; border-radius: 50%; margin: 0 20px;">
+                            <button class="boton-blanco posicion-boton-blanco" style="height: 1.5em; border-radius: 50%; margin: 0 20px;">
                                 <p><a href="#"><i class="fa-solid fa-play"></i></a></p>
-                            </div>
+                            </button>
                             <div class="texto-panel"><p><a href="#" style="color: white;">MIRA EL VIDEO</a></p></div>
                         
                     </div><!-- row -->
-                </div><!-- container texto-columna -->
+                </article><!-- container texto-columna -->
             </div><!-- col-50 -->
 
-                <div class="texto-lateral texto-panel">
-                    <p style="margin: 0;">Descubre - Compra - Juega - Diviertete</p>
-                </div>
+            <div class="texto-lateral texto-panel">
+                <p style="margin: 0;">Descubre - Compra - Juega - Diviertete</p>
+            </div>
         </div><!-- row -->
-</div><!-- panel -->
+</section><!-- panel -->
 
-<div id="logos">
+<section id="logos">
         <div class="row">
-            <div class="col col-16_66"><img src="images/Activision.jpg" alt="" class="img-fluid"></div>
-            <div class="col col-16_66"><img src="images/Naughty-Dog.jpg" alt="" class="img-fluid"></div>
-            <div class="col col-16_66"><img src="images/infinityward.jpg" alt="" class="img-fluid"></div>
-            <div class="col col-16_66"><img src="images/squareenixe.jpg" alt="" class="img-fluid"></div>
-            <div class="col col-16_66"><img src="images/BlackFriday.jpg" alt="" class="img-fluid"></div>
-            <div class="col col-16_66"><img src="images/taketwo.jpg" alt="" class="img-fluid"></div>
+            <figure class="col col-16_66"><img src="images/Activision.jpg" alt="" class="img-fluid"></figure>
+            <figure class="col col-16_66"><img src="images/Naughty-Dog.jpg" alt="" class="img-fluid"></figure>
+            <figure class="col col-16_66"><img src="images/infinityward.jpg" alt="" class="img-fluid"></figure>
+            <figure class="col col-16_66"><img src="images/squareenixe.jpg" alt="" class="img-fluid"></figure>
+            <figure class="col col-16_66"><img src="images/BlackFriday.jpg" alt="" class="img-fluid"></figure>
+            <figure class="col col-16_66"><img src="images/taketwo.jpg" alt="" class="img-fluid"></figure>
         </div><!-- row -->
-</div><!-- logos -->
+</section><!-- logos -->
 
-<div id="guia">
-    <div class="container padded">
+<section id="guia">
+    <article class="container padded">
             <div class="texto-superior-guia">
                 <p>Te recomendamos esto</p>
                 <h2 style="margin: 15px;">LOS PASOS PARA TU NUEVA ADQUISICIÓN</h2>
             </div><!-- texto-superior-guia -->
         <div class="row">
             <div class="texto-iconos">
-                <div class="col">
+                <article class="col">
                     <i class="fa-regular fa-window-restore"></i>
                     <h3>1. Descubre</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis esse accusantium rerum itaque!</p>
-                </div><!-- col -->
-                <div class="col">
+                </article><!-- col -->
+                <article class="col">
                     <i class="fa-solid fa-money-bills"></i>
                     <h3>2. Compra</h3>
                     <p>Voluptatum molestiae, culpa unde, quidem nulla ullam deleniti, libero debitis vel sed odio.</p>
-                </div><!-- col -->
-                <div class="col">
+                </article><!-- col -->
+                <article class="col">
                     <i class="fa-solid fa-gamepad"></i>
                     <h3>3. Juega</h3>
                     <p>Iste illum nihil, atque, libero consectetur quisquam sint est id ipsa, odit aut.</p>
-                </div><!-- col -->
-                <div class="col">
+                </article><!-- col -->
+                <article class="col">
                     <i class="fa-regular fa-face-laugh-beam"></i>
                     <h3>4. Diviertete</h3>
                     <p>Deleniti beatae eaque, repellat fugit ullam non eius, accusantium ducimus aperiam adipisci autem!</p>
-                </div><!-- col -->
+                </article><!-- col -->
             </div><!-- texto-iconos -->
         </div><!-- row -->
         <div class="row botones-guia">
-            <div class="boton-amarillo" style="margin: 0 5px;">
+            <button class="boton-amarillo" style="margin: 0 5px;">
                 <p><a href="#">Ofertas <i class="fa-solid fa-arrow-right"></i></a> </p>
-            </div>
-            <div class="boton-blanco" style="margin: 0 5px;">
+            </button>
+            <button class="boton-blanco" style="margin: 0 5px;">
                 <p><a href="#">Novedades <i class="fa-solid fa-arrow-right"></i></a></p>
-            </div>
+            </button>
         </div><!-- row -->
-    </div><!-- container -->
-</div><!-- guia -->
+    </article><!-- container -->
+</section><!-- guia -->
 
-<div id="top-semana">
+<section id="top-semana">
     <div class="container padded">
-        <div class="texto-top">
+        <article class="texto-top">
             <div class="row">
                 <div class="col col-45">
                     <p>Top de la semana</p>
@@ -142,53 +144,53 @@
                     <p style="margin-bottom: 14.5px; word-spacing: 5px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex ea iste incidunt porro quos itaque id.</p>
                 </div><!-- col col-30 -->
                 <div class="boton-top-semana col-25">
-                    <div class="boton-azul">
+                    <button class="boton-azul">
                         <p><a href="#">Semana pasada <i class="fa-solid fa-arrow-right"></i></a></p>
-                    </div>
+                    </button>
                 </div><!-- boto-top-semana col-25 -->
             </div><!-- row -->
-        </div><!-- texto-top -->
+        </article><!-- texto-top -->
         <div class="row">
-            <div class="col col-50">
+            <figure class="col col-50">
                 <img src="images/Imagen-lista.jpg" class="img-fluid">
-            </div>
-            <div class="juegos-de-la-semana">
-                <div class="col">
+            </figure>
+            <section class="juegos-de-la-semana">
+                <article class="col">
                     <div class="row">
                         <div class="col"><h3 class="titulo-juego">The Last of Us<br>Part 2</h3></div>
                         <div class="col col-45 reseña-juego"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis doloremque magni ea, optio eveniet.</p></div>
                         <div class="col col-16_66"><p class="numero-lista">01</p></div>
                     </div><!-- row -->
-                </div><!-- col -->
-                <div class="col">
+                </article><!-- col -->
+                <article class="col">
                     <div class="row">
                         <div class="col"><h3 class="titulo-juego">Cyberpunk <br>2077</h3></div>
                         <div class="col col-45 reseña-juego"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ipsa numquam deleniti voluptate!</p></div>
                         <div class="col col-16_66"><p class="numero-lista">02</p></div>
                     </div><!-- row -->
-                </div><!-- col -->
-                <div class="col">
+                </article><!-- col -->
+                <article class="col">
                     <div class="row">
                         <div class="col"><h3 class="titulo-juego">Animal Crossing: <br>New Horizons</h3></div>
                         <div class="col col-45 reseña-juego"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ipsa numquam deleniti voluptate!</p></div>
                         <div class="col col-16_66"><p class="numero-lista">03</p></div>
                     </div><!-- row -->
-                </div><!-- col -->
-                <div class="col">
+                </article><!-- col -->
+                <article class="col">
                     <div class="row">
                         <div class="col"><h3 class="titulo-juego">DOOM <br>Eternal</h3></div>
                         <div class="col col-45 reseña-juego"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ipsa numquam deleniti voluptate!</p></div>
                         <div class="col col-16_66"><p class="numero-lista">04</p></div>
                     </div><!-- row -->
-                </div><!-- col -->
-            </div>
+                </article><!-- col -->
+            </section>
         </div><!-- row -->
     </div><!-- container -->
-</div><!-- top-semana -->
+</section><!-- top-semana -->
 
-<div id="mejores-descuentos">
+<section id="mejores-descuentos">
     <div class="container padded">
-        <div class="texto-top2">
+        <section class="texto-top2">
             <div class="row">
                 <div class="col col-30">
                     <p>Descuentos</p>
@@ -198,56 +200,56 @@
                     <p style="margin-bottom: 14.5px; word-spacing: 5px;">Lorem ipsum  amet consectetur adipisicing. Dolores incidunt quos asperiores aspernatur iure voluptatibus nesciunt corporis quod repellendus rem?</p>
                 </div><!-- col col-45 -->
                 <div class="boton-top-semana col-25">
-                    <div class="boton-blanco">
+                    <button class="boton-blanco">
                         <p><a href="#">Ver descuentos <i class="fa-solid fa-arrow-right"></i></a></p>
-                    </div>
+                    </button>
                 </div><!-- boto-top-semana col-25 -->
             </div><!-- row -->
-        </div><!-- texto-top -->
-        <div class="juegos-descuento">
+        </section><!-- texto-top -->
+        <section class="juegos-descuento">
             <div class="row">
-                <div class="col col-35">
+                <figure class="col col-35">
                     <img src="images/ASSADCREED.jpg" class="img-fluid">
-                </div>
+                </figure>
                 <div class="col col-15">
                     <p class="titulo-descuento">Descuento en:</p>
-                    <h3 class="nombre-juego-descuento">Assassin's <br>Creed <br>Rogue</h3>
+                    <h3 class="nombre-juego-descuento">Assassin's Creed Rogue</h3>
                 </div>
                 
-                <div class="col col-35">
+                <figure class="col col-35">
                     <img src="images/forza4.jpg" class="img-fluid">
-                </div>
+                </figure>
                 <div class="col col-15">
                     <p class="titulo-descuento">Descuento en:</p>
-                    <h3 class="nombre-juego-descuento">Forza <br>Horizon 4</h3>
+                    <h3 class="nombre-juego-descuento">Forza Horizon 4</h3>
                 </div>
             </div><!-- row -->
-        </div><!-- juegos-descuento -->
-        <div class="juegos-descuento2">
+        </section><!-- juegos-descuento -->
+        <section class="juegos-descuento2">
             <div class="row">
                 <div class="col col-15">
                     <p class="titulo-descuento">Descuento en:</p>
-                    <h3 class="nombre-juego-descuento">Call of <br>Duty <br>WWII</h3>
+                    <h3 class="nombre-juego-descuento">Call of Duty WWII</h3>
                 </div>
-                <div class="col col-35" style="padding-left: 8px;">
+                <figure class="col col-35" style="padding-left: 8px;">
                     <img src="images/COD.jpg" class="img-fluid">
-                </div>
+                </figure>
                 
                 
                 <div class="col col-15">
                     <p class="titulo-descuento">Descuento en:</p>
                     <h3 class="nombre-juego-descuento">FIFA 19</h3>
                 </div>
-                <div class="col col-35" style="padding-left: 8px;">
+                <figure class="col col-35" style="padding-left: 8px;">
                     <img src="images/fifa.jpg" class="img-fluid">
-                </div>
+                </figure>
                 
             </div><!-- row -->
-        </div><!-- juegos-descuento -->
+        </section><!-- juegos-descuento -->
     </div><!-- container -->
-</div><!-- mejores-descuentos -->
+</section><!-- mejores-descuentos -->
 
-<div id="NuevoSaber">
+<section id="NuevoSaber">
     <div class="container padded">
         <div class="col">
             <div class="reseña">
@@ -261,16 +263,34 @@
         </div>
         <div class="col">
             <div class="centrado-menu" style="padding-top: 50px;">
-                <div class="boton-transparente posicion-boton-blanco" style="height: 1.5em; border-radius: 50%; margin: 0 20px;">
+                <button class="boton-transparente posicion-boton-blanco" style="height: 1.5em; border-radius: 50%; margin: 0 20px;">
                     <p><a href=""><i class="fa-solid fa-play"></i></a></p>
-                </div>
+                </button>
                 <div class="texto-panel"><p><a href="" style="color: white;">REPRODUCIR VIDEO</a></p></div>
             </div>
         </div>
     </div><!-- container -->
-</div><!-- NuevoSaber -->
+</section><!-- NuevoSaber -->
 
-<div id="footer">
+<section id="suscripcion">
+    <div class="container padded">
+        <div id="mensaje">
+            <div class="row">
+                <div class="col-65">
+                    <p style="font-size: 20px;">Suscribete</p>
+                    <h2 style="margin-top: 10px;">¿Quieres estar al tanto de la novedades?<br><span class="texto-color-amarillo">Unete a nosotros</span></h2>
+                </div>
+                <div class="col">
+                    <button class="boton-amarillo"><p>EMPIEZA<br>AQUI</p></button>
+                </div>
+            </div>
+        </div>
+    </div><!-- container -->
+</section><!-- suscripcion -->
+</main>
+
+
+<footer id="footer">
     <div class="container padded" id="mensajes-footer">
             <div class="col">
                 <p>©2023 Wedesigntech. All Rights Reserved.</p>
@@ -279,7 +299,7 @@
                 <p>Terms & Condition   |   Privacy Policy</p>
             </div>
     </div><!-- container -->
-</div><!-- footer -->
+</footer><!-- footer -->
 
 
 <a href="#" id="ir-arriba">Ir arriba------</a>
